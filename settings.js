@@ -19,9 +19,9 @@ require('dotenv').config()
 
 //_______________________ ┏  Main Setting  ┓ _______________________\\
 
-creator = '乂𝘼𝙡𝙞𝙥乂' // Nama 
+creator = 'fatur' // Nama 
 port = 8080 //port host
-LimitApikey = 200 // Limit Apikey default
+LimitApikey = 999999 // Limit Apikey default
 
 //___________ ┏  Database Mongodb Setting  ┓ ___________\\
 
@@ -35,7 +35,7 @@ servicesmtp = 'Gmail'//Ada gmail ada sendinblue ikut masing2 limit gmail 500 lim
 sendemail = process.env.sendemail //Email SMTP
 fromsendemail = process.env.fromsendemail // From Email SMTP *kalau takde custom email kena sama email dengan Email SMTP
 sendpwmail = process.env.sendpwmail // Password Email SMTP
-domain = 'alpis.eu.org'// domain website tanpa http or https
+domain = 'https://api.faturidris.repl.co'// domain website tanpa http or https
 
 //_______________________ ┏  Apikey  ┓ _______________________\\
 
@@ -89,12 +89,6 @@ loghandler = {
 	    status: false,
 	    code: 403,
 	    message: '[!] Forbiden or Error, Emoji not Found',
-	    maintanied_by: `${creator}`
-	},
-    instgram: {
-	    status: false,
-	    code: 403,
-	    message: '[!] Forbiden or Error, Username tidak wujud atau account private',
 	    maintanied_by: `${creator}`
    },
     register: {
